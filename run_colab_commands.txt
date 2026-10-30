@@ -1,0 +1,6 @@
+# Run these cells in Google Colab after uploading the ZIP
+!unzip -qo Fraud_Detection_Big_Data.zip
+%cd Fraud_Detection_Big_Data
+!pip -q install -r requirements.txt
+!python src/generate_data.py
+!python src/train_model.py
